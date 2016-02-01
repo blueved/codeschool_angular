@@ -4,10 +4,10 @@
 		<link href="css/bootstrap.min.css"  rel="stylesheet" type="text/css" />
 	</head>
 	<body>
-		<div >
-			<h1>Product Name</h1>{{StoreController.gem.name}}
-			<h2>$Product Price </h2>
-			<p>Product Description </p>
+		<div ng-controller="StoreController as store">
+			<h1>{{store.product.name}}</h1>
+			<h2>${{store.product.price}}</h2>
+			<p>{{store.product.description}} </p>
 		</div>
 		
 		<script type="text/javascript" src="library/angular.min.js" ></script>
